@@ -1,0 +1,82 @@
+body {
+    padding: 20px;
+}
+
+.main-container {
+    border: 5px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    border: 4px solid black;
+    height: 100%;
+}
+
+.header {
+    background-color: rgb(236, 233, 233);
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-top: none;
+    border-bottom: none;
+}
+
+.flex-blackjack-row1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    margin-top: auto;
+    height: 100%;
+    border-top: 4px solid black;
+}
+
+.flex-blackjack-row1 div {
+    height: 400px;
+}
+
+.flex-blackjack-row2 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(3, 41, 3);
+    height: 150px;
+    margin-top: auto;
+    border-top: 1px solid white;
+}
+
+.button-container button {
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.flex-blackjack-row3 {
+    display: flex;
+    background-color: rgb(236, 233, 233)
+}
+
+.stats-table {
+    width: 100%;
+    table-layout: fix;
+}
+
+.stats-table th,
+.stats-table td {
+    width: 33.33%;
+    text-align: center;
+}
+
+.win {
+    color: rgb(68, 150, 237);
+}
+
+.lose {
+    color: rgb(154, 10, 10);
+}
+
+.draw {
+    color: rgb(0, 0, 0);
+}
