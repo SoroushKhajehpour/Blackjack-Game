@@ -1,5 +1,5 @@
 body {
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
 }
 
 .main-container {
@@ -11,39 +11,68 @@ body {
 }
 
 .header {
-    background-color: rgb(236, 233, 233);
+    background-color: rgb(3, 41, 3);
     text-align: center;
+}
+
+.header h2,
+.header h5 {
+    color: white
+}
+
+.flex-blackjack-row1 h2 {
+    color: white
 }
 
 .button-container {
     display: flex;
     gap: 5px;
     align-items: center;
-    border: 1px solid rgb(255, 255, 255);
-    border-top: none;
-    border-bottom: none;
 }
 
 .flex-blackjack-row1 {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(255, 255, 255);
     margin-top: auto;
     height: 100%;
-    border-top: 4px solid black;
+    border-top: 2px solid rgb(255, 255, 255);
+    background: url(/blackjack_assets/images/blackjack-bg.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 300px;
 }
 
 .flex-blackjack-row1 div {
-    height: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    flex-wrap: wrap;
 }
 
+#dealer-box {
+    border-left: 3px solid black;
+}
+
+
+#dealer-box,
+#your-box {
+    min-width: 225px;
+}
+
+
+#your-box img,
+#dealer-box img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    margin: 10px;
+}
 .flex-blackjack-row2 {
     display: flex;
     justify-content: center;
     background-color: rgb(3, 41, 3);
     height: 150px;
     margin-top: auto;
-    border-top: 1px solid white;
+    border-top: 2px solid white;
 }
 
 .button-container button {
@@ -54,7 +83,6 @@ body {
 }
 
 .flex-blackjack-row3 {
-    display: flex;
     background-color: rgb(236, 233, 233)
 }
 
